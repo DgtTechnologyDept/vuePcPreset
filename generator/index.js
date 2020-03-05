@@ -42,6 +42,10 @@ module.exports = (api, options) => {
   api.render({
     './babel.config.js': './template/babel.config.js'
   })
+  //  渲染vue.config.js
+  api.render({
+    './vue.config.js': './template/vue.config.js'
+  })
 
   // 预置 xlsx 组件
   if (options.xlsx) {
